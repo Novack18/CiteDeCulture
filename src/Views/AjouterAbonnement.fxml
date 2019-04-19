@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterAbonnementController">
+   <children>
+      <Label layoutX="141.0" layoutY="64.0" text="Ajout d'une nouvelle abonnement :" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="152.0" text="Utilisateur :" />
+      <Button layoutX="532.0" layoutY="317.0" mnemonicParsing="false" onAction="#ajouterAbonnement" style="-fx-background-color: #B0E0E6;" text="Calculer" />
+      <Label fx:id="erreurMessage" contentDisplay="CENTER" layoutX="285.0" layoutY="504.0" prefHeight="30.0" prefWidth="223.0" textFill="DARKRED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="208.0" text="Periode :" />
+      <Label layoutX="248.0" layoutY="263.0" text="Catégorie :" />
+      <ComboBox fx:id="categorie" layoutX="383.0" layoutY="259.0" onAction="#categorieAction" prefWidth="150.0" />
+      <ComboBox fx:id="periode" layoutX="383.0" layoutY="204.0" onAction="#periodeAction" prefWidth="150.0" />
+      <ComboBox fx:id="user" layoutX="383.0" layoutY="148.0" onAction="#userAction" prefWidth="150.0" />
+      <Label fx:id="prix" layoutX="339.0" layoutY="362.0" prefHeight="27.0" prefWidth="150.0" textFill="#006600">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmer" layoutX="379.0" layoutY="431.0" mnemonicParsing="false" onAction="#confimationAchatAbonnement" style="-fx-background-color: #B0E0E6;" text="Confirmer" />
+   </children>
+</AnchorPane>

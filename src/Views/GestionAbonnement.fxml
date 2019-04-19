@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="gestionsalle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #FFFFE0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestionAbonnementController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="120.0" style="-fx-background-color: #B0E0E6;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#clear" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #ADD8E6; -fx-text-fill: #000000;" text="Vider">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#afficher" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Afficher">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#ajouter" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Ajouter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></Button>
+            <Button mnemonicParsing="false" onMouseClicked="#supprimer" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #000000;" text="Supprimer">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #FA8072;" text="Menu principale">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button onAction="#deco" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: transparent; -fx-text-fill: #FA8072;" text="Déconncter">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets right="3.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="gestionSalleMessage" alignment="CENTER" prefHeight="20.0" prefWidth="794.0" style="-fx-text-fill: #008000;">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestionCategorieController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="43.0" prefHeight="182.0" prefWidth="582.0">
+         <children>
+            <AnchorPane layoutX="-32.0" layoutY="-44.0" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FFFFE0;" />
+         </children></AnchorPane>
+      <Label layoutX="369.0" layoutY="350.0" text="Nom">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label layoutX="680.0" layoutY="350.0" text="Type">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TextField fx:id="Nom_id1" layoutX="332.0" layoutY="384.0" prefHeight="25.0" prefWidth="121.0" />
+      <TextField fx:id="Type_id1" layoutX="638.0" layoutY="384.0" prefHeight="25.0" prefWidth="110.0" />
+      <Button fx:id="Bouton_modifier" layoutX="346.0" layoutY="464.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #B0E0E6;" text="Modifier" />
+      <Button fx:id="Bouton_supprimer" layoutX="657.0" layoutY="464.0" mnemonicParsing="false" style="-fx-background-color: #B0E0E6;" text="Supprimer" />
+      <Button fx:id="Button_ajout" layoutX="524.0" layoutY="550.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: #B0E0E6;" text="Ajout" />
+      <TableView fx:id="CategorieTable" layoutX="220.0" layoutY="75.0" prefHeight="200.0" prefWidth="590.0">
+        <columns>
+          <TableColumn fx:id="Categorie_id" prefWidth="182.0" text="Id" />
+          <TableColumn fx:id="Categorie_Nom" prefWidth="230.0" text="Nom" />
+            <TableColumn fx:id="Categorie_Type" prefWidth="177.0" text="Type" />
+        </columns>
+      </TableView>
+      <Button layoutX="77.0" layoutY="28.0" mnemonicParsing="false" onAction="#Retour" style="-fx-background-color: #B0E0E6;" text="Retour" />
+   </children>
+</AnchorPane>

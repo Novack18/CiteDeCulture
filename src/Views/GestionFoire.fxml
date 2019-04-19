@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="1319.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GestionFoireController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-4.0" prefHeight="588.0" prefWidth="1324.0" style="-fx-background-color: #FFFFE0;">
+         <children>
+            <TableView fx:id="TableFoire" layoutX="78.0" layoutY="99.0" prefHeight="184.0" prefWidth="844.0">
+              <columns>
+                <TableColumn fx:id="Foire_id" prefWidth="123.0" text="Id" />
+                <TableColumn fx:id="Foire_nom" prefWidth="124.0" text="Nom_Foire" />
+                  <TableColumn fx:id="Foire_Dated" prefWidth="100.0" text="Date_Debut" />
+                  <TableColumn fx:id="Foire_Datef" prefWidth="129.0" text="Date_Fin" />
+                  <TableColumn fx:id="Foire_nds" prefWidth="127.0" text="Nombre_De_Stand" />
+                  <TableColumn fx:id="Foire_pds" prefWidth="134.0" text="Prix_Du_Stand" />
+                  <TableColumn fx:id="Foire_ci" prefWidth="106.0" text="Categorie_id" />
+              </columns>
+            </TableView>
+            <Button layoutX="35.0" layoutY="30.0" mnemonicParsing="false" onAction="#Retour" style="-fx-background-color: #B0E0E6;" text="Retour" />
+            <TextField fx:id="nds_id3" layoutX="663.0" layoutY="355.0" prefHeight="26.0" prefWidth="152.0" />
+            <TextField fx:id="pds_id2" layoutX="663.0" layoutY="401.0" prefHeight="26.0" prefWidth="152.0" />
+            <Label layoutX="462.0" layoutY="403.0" prefHeight="23.0" prefWidth="166.0" text="Prix Du Stand">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label layoutX="63.0" layoutY="458.0" prefHeight="23.0" prefWidth="136.0" style="-fx-background-size: 100;" text="Date_Fin">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <DatePicker fx:id="df_id2" layoutX="244.0" layoutY="456.0" prefHeight="26.0" prefWidth="152.0" />
+            <Label layoutX="62.0" layoutY="351.0" text="Nom de la foire">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <TextField fx:id="Nom_id2" layoutX="244.0" layoutY="346.0" prefHeight="26.0" prefWidth="152.0" />
+            <Label layoutX="61.0" layoutY="399.0" prefHeight="30.0" prefWidth="150.0" text="Date_Debut">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <DatePicker fx:id="dd_id2" layoutX="244.0" layoutY="401.0" prefHeight="26.0" prefWidth="152.0" />
+            <Label layoutX="462.0" layoutY="353.0" text="Nombre de Stand">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Label layoutX="462.0" layoutY="454.0" text="Categorie Id">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <ComboBox fx:id="cid3" layoutX="664.0" layoutY="463.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="242.0" layoutY="511.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #B0E0E6;" text="Modifier">
+         <font>
+            <Font size="82.0" />
+         </font></Button>
+      <Button layoutX="512.0" layoutY="511.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #ADD8E6;" text="Supprimer" />
+      <Button layoutX="373.0" layoutY="511.0" mnemonicParsing="false" onAction="#Ajout" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #ADD8E6;" text="Ajouter" />
+      <Button layoutX="641.0" layoutY="511.0" mnemonicParsing="false" onAction="#pdf" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #ADD8E6;" text="PDF" />
+   </children>
+</AnchorPane>

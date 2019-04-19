@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="TableFoire" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DemandeDeStandController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFFE0;">
+         <children>
+            <AnchorPane layoutX="695.0" layoutY="333.0" prefHeight="17.0" prefWidth="86.0" />
+            <Label fx:id="ddlabel" layoutX="290.0" layoutY="527.0" prefHeight="17.0" prefWidth="107.0" />
+            <Label fx:id="nomlabel" layoutX="290.0" layoutY="456.0" prefHeight="17.0" prefWidth="107.0" />
+            <Label fx:id="Pslabel" layoutX="674.0" layoutY="457.0" prefHeight="17.0" prefWidth="94.0" />
+            <Label fx:id="dflabel" layoutX="657.0" layoutY="378.0" prefHeight="17.0" prefWidth="94.0" />
+            <Label fx:id="idlabel" layoutX="273.0" layoutY="377.0" prefHeight="17.0" prefWidth="120.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TableFoiree" layoutX="85.0" layoutY="92.0" prefHeight="214.0" prefWidth="714.0">
+        <columns>
+          <TableColumn fx:id="Foire_id" prefWidth="147.0" text="Id" />
+          <TableColumn fx:id="Foire_nom" prefWidth="111.0" text="Nom_Foire" />
+            <TableColumn fx:id="Foire_Dated" prefWidth="101.0" text="Date_debut" />
+            <TableColumn fx:id="Foire_Datef" prefWidth="112.0" text="Date_fin" />
+            <TableColumn fx:id="Foire_pds" prefWidth="101.0" text="Prix Du Stand" />
+            <TableColumn fx:id="Foire_ci" prefWidth="141.0" text="Categorie" />
+        </columns>
+      </TableView>
+      <Label layoutX="156.0" layoutY="376.0" text="Id">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label layoutX="154.0" layoutY="449.0" text="Nom">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="152.0" layoutY="520.0" text="Date_Debut">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="500.0" layoutY="376.0" text="Date_fin">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="500.0" layoutY="449.0" text="Prix Du Stand">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="500.0" layoutY="520.0" text="Categorie">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="ctlabel" layoutX="652.0" layoutY="529.0" prefHeight="17.0" prefWidth="105.0" />
+      <Button layoutX="382.0" layoutY="618.0" mnemonicParsing="false" onAction="#Louer" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: #B0E0E6;" text="Louer" />
+      <Accordion layoutX="20.0" layoutY="325.0" />
+      <Button layoutX="47.0" layoutY="34.0" mnemonicParsing="false" onAction="#Retour" style="-fx-background-color: #B0E0E6;" text="Retour" />
+   </children>
+</AnchorPane>

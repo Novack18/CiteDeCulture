@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterFoireController">
+   <children>
+      <AnchorPane layoutX="80.0" layoutY="2.0" prefHeight="600.0" prefWidth="920.0" style="-fx-background-color: #FFFFE0;">
+         <children>
+            <Label layoutX="47.0" layoutY="52.0" prefHeight="42.0" prefWidth="202.0" text="Ajout d'une Foire" textFill="POWDERBLUE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="47.0" layoutY="14.0" mnemonicParsing="false" onAction="#Retour4" style="-fx-background-color: #B0E0E6;" text="Retour" />
+         </children>
+      </AnchorPane>
+      <Pane layoutY="-5.0" prefHeight="607.0" prefWidth="117.0" style="-fx-background-color: #B0E0E6;" />
+      <TextField fx:id="NomId" layoutX="224.0" layoutY="202.0" />
+      <DatePicker fx:id="DdId" layoutX="224.0" layoutY="299.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="DFId" layoutX="224.0" layoutY="380.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="NdSId" layoutX="538.0" layoutY="202.0" />
+      <TextField fx:id="PsId" layoutX="538.0" layoutY="299.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="224.0" layoutY="159.0" prefHeight="17.0" prefWidth="149.0" text="Nom">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label layoutX="224.0" layoutY="263.0" text="Date Debut">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="223.0" layoutY="349.0" text="Date Fin">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="538.0" layoutY="159.0" text="Nombre de Stand">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="543.0" layoutY="263.0" text="Prix du Stand">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="543.0" layoutY="349.0" text="Categorie">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="AjouterId" layoutX="373.0" layoutY="502.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #B0E0E6;" text="Ajouter" />
+      <ComboBox fx:id="CId" layoutX="537.0" layoutY="380.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

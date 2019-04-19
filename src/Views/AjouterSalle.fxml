@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterSalleController">
+   <children>
+      <Label layoutX="112.0" layoutY="111.0" text="Ajout d'une nouvelle salle:" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="217.0" text="Nom :" />
+      <TextField fx:id="nom" layoutX="363.0" layoutY="213.0" />
+      <Label layoutX="228.0" layoutY="277.0" text="Capaciter :" />
+      <Spinner fx:id="capaciter" layoutX="363.0" layoutY="273.0" />
+      <Button layoutX="512.0" layoutY="334.0" mnemonicParsing="false" onAction="#ajouterSalle" style="-fx-background-color: #B0E0E6;" text="Ajouter" />
+      <Label fx:id="erreurMessage" contentDisplay="CENTER" layoutX="188.0" layoutY="400.0" text="Nom de salle déjà existant !!" textFill="DARKRED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

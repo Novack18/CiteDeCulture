@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ArtClassiqueBackController">
+  <tabs>
+    <Tab fx:id="gestionSallesTab" onSelectionChanged="#gestionSalles" text="Gestion Salles">
+        <fx:include source="GestionSalle.fxml" />
+    </Tab>
+    <Tab fx:id="gestionArtistesTab" onSelectionChanged="#gestionArtistes" text="Gestion Artistes">
+        <fx:include source="GestionArtiste.fxml" />
+    </Tab>
+    <Tab fx:id="gestionGroupeArtistesTab" onSelectionChanged="#gestionGroupeArtistes" text="Gestion Groupe d'Artistes">
+        <fx:include source="GestionGroupeArtiste.fxml" />
+    </Tab>
+    <Tab fx:id="gestionAbonnementsTab" onSelectionChanged="#gestionAbonnements" text="Gestion Abonnements">
+        <fx:include source="GestionAbonnement.fxml" />
+    </Tab>
+<!--    <Tab fx:id="gestionReservationsTab" onSelectionChanged="#gestionReservations" text="Gestion Réservations">
+        <fx:include source="GestionReservation.fxml" />
+    </Tab>-->
+  </tabs>
+</TabPane>

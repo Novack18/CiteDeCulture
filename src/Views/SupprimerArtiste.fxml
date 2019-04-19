@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SupprimerArtisteController">
+   <children>
+      <ComboBox fx:id="ids" layoutX="402.0" layoutY="225.0" onAction="#loadSalle" prefWidth="150.0" />
+      <Label layoutX="190.0" layoutY="227.0" text="Choisir un artiste :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="artisteSupprimerBouton" layoutX="516.0" layoutY="317.0" mnemonicParsing="false" onAction="#supprimerSalle" style="-fx-background-color: #B0E0E6;" text="Supprimer" />
+      <Label layoutX="117.0" layoutY="109.0" text="Supprimer un artiste :" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

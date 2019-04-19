@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterArtisteController">
+   <children>
+      <Label layoutX="124.0" layoutY="62.0" text="Ajout d'un nouveau artiste :" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="155.0" text="Nom :" />
+      <TextField fx:id="nom" layoutX="353.0" layoutY="151.0" />
+      <Button layoutX="502.0" layoutY="378.0" mnemonicParsing="false" onAction="#ajouterArtiste" style="-fx-background-color: #B0E0E6;" text="Ajouter" />
+      <Label fx:id="erreurMessage" contentDisplay="CENTER" layoutX="244.0" layoutY="460.0" prefHeight="30.0" prefWidth="150.0" textFill="DARKRED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="201.0" text="Prénom :" />
+      <TextField fx:id="prenom" layoutX="353.0" layoutY="197.0" />
+      <DatePicker fx:id="dateNaissance" layoutX="353.0" layoutY="287.0" promptText="dateNaissance" />
+      <Label layoutX="217.0" layoutY="290.0" text="Date de naissance :" />
+      <Label layoutX="218.0" layoutY="245.0" text="CIN :" />
+      <TextField fx:id="cin" layoutX="353.0" layoutY="241.0" />
+      <Label layoutX="218.0" layoutY="336.0" text="Groupe :" />
+      <ComboBox fx:id="groupe" layoutX="353.0" layoutY="332.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

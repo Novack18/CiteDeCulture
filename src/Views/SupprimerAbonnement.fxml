@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SupprimerAbonnementController">
+   <children>
+      <ComboBox fx:id="ids" layoutX="382.0" layoutY="185.0" onAction="#loadAbonnement" prefWidth="150.0" />
+      <Label layoutX="170.0" layoutY="187.0" text="Choisir une abonnement :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="abonnementSupprimerBouton" layoutX="496.0" layoutY="277.0" mnemonicParsing="false" onAction="#supprimerAbonnement" style="-fx-background-color: #B0E0E6;" text="Supprimer" />
+      <Label layoutX="107.0" layoutY="99.0" text="Supprimer une abonnement :" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

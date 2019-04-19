@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficherArtistesController">
+   <children>
+      <TableView fx:id="tableArtiste" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" stylesheets="@../Ressources/table.css">
+        <columns>
+          <TableColumn fx:id="cinArtiste" prefWidth="72.0" text="CIN" />
+          <TableColumn fx:id="nomArtiste" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="prenomArtiste" prefWidth="101.0" text="Prénom" />
+            <TableColumn fx:id="dateNaissanceArtiste" prefWidth="125.0" text="Date de naissance" />
+            <TableColumn fx:id="groupeArtiste" prefWidth="98.0" text="Groupe" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+      <TextField fx:id="filterField">
+         <VBox.margin>
+            <Insets left="600.0" right="35.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <Label fx:id="gestionSalleMessage" alignment="CENTER" prefHeight="800.0" prefWidth="880.0" textFill="GREEN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
