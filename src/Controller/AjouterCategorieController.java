@@ -65,7 +65,7 @@ public class AjouterCategorieController implements Initializable {
                
            }
            
-           else if ( Type_id.getText().matches("^[a-zA-Z]+$") )
+           else if (!Type_id.getText().matches("^[a-zA-Z]+$") )
            {
                Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Information Dialog");

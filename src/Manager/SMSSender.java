@@ -21,9 +21,9 @@ public class SMSSender {
     public static void SendSMS(String number, String text){
         try {
             // Construct data
-            String apiKey = "apikey=" + "oFaS/NVQTv4-c90oZSmXhnSzI7U1T0t2oMhzSiNKSv";
+            String apiKey = "apikey=" + "Z9xR8muzohA-SJ5M16qJHNrzhZ2a0FYFkH3FsakMGa";
             String message = "&message=" + text;
-            String sender = "&sender=" + "Med Omar WALHA";
+            String sender = "&sender=" + "Omar";
             String numbers = "&numbers=" + number;
 
             // Send data

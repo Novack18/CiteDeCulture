@@ -181,14 +181,14 @@ public class SeAbonnerController implements Initializable {
         }
         srvAbonnementTemplate.modifierAbonnementTemplate(aT);
         
-        SMSSender.SendSMS("+216"+ServiceFOSUser.getCurrentUser().getEmail_canonical(), "Bravo vous avez gagner un abo");
+        SMSSender.SendSMS("+216"+ServiceFOSUser.getCurrentUser().getEmail_canonical(), "Votre abonnement de catégorie "+categorie.getValue().toString()+" valabde de "+periode.getValue().toString());
         EmailSend.SendMail(ServiceFOSUser.getCurrentUser().getEmail(), "Abonnement", "Votre abonnement es désormer actif, merci pour votre confiance !");
         
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Abonnement");
         // Header Text: null
         alert.setHeaderText(null);
-        alert.setContentText("Votre demande a été traitée avec succès, vous recevrez un sms de notre part :)");
+        alert.setContentText("Votre demande a été traitée avec succès, vous recevrez un mail et un sms de notre part :)");
         alert.showAndWait();
     }
     @Override
